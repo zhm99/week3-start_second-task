@@ -1,0 +1,12 @@
+<div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+  <!--<cm-menu-item [name]="'Home'" [path]="'/home'"></cm-menu-item>
+  <cm-menu-item [name]="'Course'" [path]="'/courses'"></cm-menu-item>
+  <cm-menu-item [name]="'Students'" [path]="'/students'"></cm-menu-item>
+  <cm-menu-item [name]="'Teachers'" [path]="'/teachers'"></cm-menu-item>-->
+
+  <cm-menu-item *ngFor="let item of menuItems" [name]="item.name" [path]="item.path" ></cm-menu-item>
+  <!--<a class="nav-link nav-link-sidebar"
+  [routerLink]="['/courses']" routerLinkActive="active" role="tab">Courses</a>
+  <a class="nav-link nav-link-sidebar"
+  [routerLink]="['/students']" routerLinkActive="active" role="tab">Students</a>-->
+</div>
